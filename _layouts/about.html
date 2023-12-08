@@ -15,32 +15,45 @@ layout: default
           {% if page.profile -%}
           <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
             {%- if page.profile.image %}
-              {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
-
-              {% if page.profile.image_circular %}
-                {%- assign profile_image_class = "img-fluid z-depth-1 rounded-circle" -%}
-              {% else %}
-                {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
-              {% endif %}
-
-              {% include figure.html
+            {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
+            
+            {% if page.profile.image_circular %}
+            {%- assign profile_image_class = "img-fluid z-depth-1 rounded-circle" -%}
+            {% else %}
+            {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
+            {% endif %}
+            
+            {% include figure.html
               path=profile_image_path
               class=profile_image_class
               alt=page.profile.image
               cache_bust=true -%}
-            {% endif -%}
-            {%- if page.profile.more_info %}
-            <div class="more-info">
-              {{ page.profile.more_info }}
+              {% endif -%}
+              {%- if page.profile.more_info %}
+              <div class="more-info">
+                {{ page.profile.more_info }}
+              </div>
+              {%- endif %}
             </div>
             {%- endif %}
-          </div>
-          {%- endif %}
-
-          <div class="clearfix">
-            {{ content }}
-          </div>
-
+            
+            <div class="clearfix">
+              {{ content }}
+            </div>
+            
+            {%- if page.social %}
+              <div class="social">
+                <div class="contact-icons" style="transform: scale(0.5);">
+                  {% include social.html %}
+                </div>
+    
+                <div class="contact-note">
+                  {{ site.contact_note }}
+                </div>
+    
+              </div>
+            {%- endif %}
+            
           <!-- News -->
           {% if page.news and site.announcements.enabled -%}
             <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">news</a></h2>
@@ -60,18 +73,6 @@ layout: default
           {%- endif %}
 
           <!-- Social -->
-          {%- if page.social %}
-            <div class="social">
-              <div class="contact-icons">
-                {% include social.html %}
-              </div>
-
-              <div class="contact-note">
-                {{ site.contact_note }}
-              </div>
-
-            </div>
-          {%- endif %}
         </article>
 
 </div>

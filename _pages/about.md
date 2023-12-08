@@ -2,12 +2,12 @@
 layout: about
 title: about
 permalink: /
-subtitle: Horstenberg 2, 1102CZ, Amsterdam, NL | +31612151107
+subtitle: Horstenberg 2, 1102CZ, Amsterdam, NL
 
 profile:
   align: right
   image: portrait.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
 
 news: false  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts

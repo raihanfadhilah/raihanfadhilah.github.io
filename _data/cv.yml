@@ -2,66 +2,55 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Muhammad Raihan Fadhilah
     - name: Date of Birth
-      value: 14th March 1879
+      value: 5th July 2001
     - name: Languages
-      value: English, German
+      value: Dutch (Novice), English (Fluent), Indonesian (Native), French (Conversational)
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: MSc Econometrics and Operations Research
+      institution: Vrije Universiteit Amsterdam, NL
+      year: 9/2022 -8/2023
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
+        - title: Relevant coursework
           contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+            - Multivariate Econometrics, Deep Learning, Big Data Statistics, Large Scale Data Engineering.
+        - title: Thesis
+          contents:
+            - "awbtrend: Python package for trend analysis of time series with correlated and heteroskedastic errors using the autoregressive wild bootstrap"
+    - title: BSc Econometrics and Operations Research
+      institution: Vrije Universiteit Amsterdam, NL
+      year: 9/2019 - 7/2022
       description:
-        - Description 1.
-        - Description 2.
-
+        - title: Relevant coursework
+          contents:
+            - Statistics, Machine Learning, Time Series Analysis and Forecasting
+        - title: Thesis
+          contents:
+            - "cDCC and Beta-t-EGARCH: Robust Covariance Modelling During The COVID-19 Market Crash."
+        
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Data Science Dual Student
+      institution: Air France KLM Martinair Cargo, Amsterdam, NL
+      year: 5/2023 - 12/2023
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Developed a predictive model for the sales team, accurately estimating the chargeable weight for various product categories (General,Fresh, Pharma, etc.) shipped by customers with competitors across different cities.
+        - Applied transfer learning to adapt the chargeable weight model from AFKLM to other airlines, achieving a notable 10% relative error. Implemented optimization methods to effectively resolve over and under-allocation issues.
+        - Built and integrated a data pipeline into Spotfire dashboards, offering insights on cargo flows for 300+ new destinations.
+
+    - title: Google Ad Campaign Budget Optimization
+      institution: WeLikeMilk, Amsterdam, NL
+      year: 12/2021 - 1/2022
       description:
-        - Description 1.
-        - Description 2.
+          - Conducted regression analysis on thousands of marketing campaigns to optimize Return on Ad Spend (ROAS).
+          - Recommended a strategic 25% reduction in daily campaign budgets, effectively maintaining targeted ROAS levels and enhancing overall cost efficiency.
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: Projects
   type: time_table
   contents:
     - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
