@@ -13,7 +13,7 @@
   contents:
     - title: MSc Econometrics and Operations Research
       institution: Vrije Universiteit Amsterdam, NL
-      year: 9/2022 -8/2023
+      year: "9/2022 - 8/2023"
       description:
         - title: Relevant coursework
           contents:
@@ -45,7 +45,7 @@
 
     - title: Google Ad Campaign Budget Optimization
       institution: WeLikeMilk, Amsterdam, NL
-      year: 12/2021 - 1/2022
+      year: "12/2021 - 1/2022"
       description:
           - Conducted regression analysis on thousands of marketing campaigns to optimize Return on Ad Spend (ROAS).
           - Recommended a strategic 25% reduction in daily campaign budgets, effectively maintaining targeted ROAS levels and enhancing overall cost efficiency.
